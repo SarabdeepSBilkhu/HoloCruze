@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# GestureDrive 🚗✋
 
-## Project info
+GestureDrive is a hand gesture-controlled robotic car that uses RF communication for seamless wireless control. The system includes a gesture-sensing controller built with an Arduino Nano and a car unit powered by an Arduino Uno alternative, controlled via RF transmitter/receiver modules.
 
-**URL**: https://lovable.dev/projects/8aeb3616-680d-48eb-a506-f3c180ab22ad
+## 🔧 Features
 
-## How can I edit this code?
+* **Gesture-Based Controller**
+  Use natural hand movements to direct the car's motion in real-time.
 
-There are several ways of editing your application.
+* **Wireless RF Communication**
+  Eliminates the need for Bluetooth modules like HC-05 by using efficient RF transmitter/receiver units.
 
-**Use Lovable**
+* **Compact and Modular Design**
+  The controller uses an Arduino Nano for portability, while the car uses a full-sized board for power handling.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8aeb3616-680d-48eb-a506-f3c180ab22ad) and start prompting.
+* **Real-Time Feedback**
+  Instant response to gesture input with minimal latency.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Technologies Used
 
-**Use your preferred IDE**
+* Arduino Nano (Controller)
+* Arduino-compatible board (Car)
+* RF Transmitter & Receiver Modules (433 MHz)
+* MPU6050 Accelerometer + Gyroscope
+* L293D Motor Driver
+* Custom PCB and prototyping
+* C++ (Arduino IDE)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🖼️ Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+gesturedrive/
+├── hardware/
+│   ├── car_circuit_diagram.png
+│   └── controller_circuit_diagram.png
+├── firmware/
+│   ├── controller_code.ino
+│   └── car_code.ino
+├── media/
+│   ├── demo.gif
+│   └── photos/
+├── README.md
+└── LICENSE
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 How It Works
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. The **controller** reads hand gestures using MPU6050.
+2. Arduino Nano maps gestures to directional commands.
+3. Commands are sent via RF transmitter to the **car**.
+4. The car receives signals and moves accordingly using DC motors.
 
-**Use GitHub Codespaces**
+## 📦 Setup Instructions
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Wire the MPU6050 to the Arduino Nano (I2C).
+2. Connect the RF transmitter to the controller.
+3. Assemble the receiver module and motor driver on the car.
+4. Upload the respective sketches to each board.
+5. Power up and test the system.
 
-## What technologies are used for this project?
+## 📽️ Demo
 
-This project is built with:
+*Insert video or gif link showcasing live demonstration here*
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8aeb3616-680d-48eb-a506-f3c180ab22ad) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License.
