@@ -10,24 +10,24 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ title, description, icon: Icon, details }: FeatureCardProps) => {
   return (
-    <Card className="group hover:shadow-tech transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-card to-secondary/30">
-      <CardHeader>
-        <div className="flex items-center space-x-3">
-          <div className="p-2 rounded-lg bg-gradient-primary">
-            <Icon className="h-6 w-6 text-primary-foreground" />
+    <Card className="group hover:shadow-product transition-all duration-300 hover:-translate-y-1 bg-card border border-border/50">
+      <CardHeader className="pb-4">
+        <div className="flex items-start space-x-4">
+          <div className="p-3 rounded-xl bg-primary/10 border border-primary/20">
+            <Icon className="h-6 w-6 text-primary" />
           </div>
-          <div>
-            <CardTitle className="text-lg">{title}</CardTitle>
-            <CardDescription>{description}</CardDescription>
+          <div className="flex-1">
+            <CardTitle className="text-lg font-display font-semibold text-foreground">{title}</CardTitle>
+            <CardDescription className="text-muted-foreground mt-1">{description}</CardDescription>
           </div>
         </div>
       </CardHeader>
-      <CardContent>
-        <ul className="space-y-2">
+      <CardContent className="pt-0">
+        <ul className="space-y-3">
           {details.map((detail, index) => (
-            <li key={index} className="flex items-start space-x-2 text-sm text-muted-foreground">
+            <li key={index} className="flex items-start space-x-3 text-sm text-muted-foreground">
               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-              <span>{detail}</span>
+              <span className="leading-relaxed">{detail}</span>
             </li>
           ))}
         </ul>

@@ -108,16 +108,8 @@ const CarPage = () => {
         title="Robotic Car System"
         subtitle="Arduino UNO Powered Mobile Platform"
         description="The robotic car serves as the mobile platform controlled by hand gestures. Built around Arduino UNO and L298N motor driver, it receives wireless commands and translates them into precise movements."
-        primaryAction={{
-          label: "View Controller",
-          to: "/controller"
-        }}
-        secondaryAction={{
-          label: "Back to Home",
-          to: "/"
-        }}
-        backgroundImage={heroCar}
-        compact={true}
+        imageSrc={heroCar}
+        imageAlt="Robotic Car System Hardware"
       />
 
       {/* Components Section */}

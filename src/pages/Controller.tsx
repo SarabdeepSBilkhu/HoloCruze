@@ -142,16 +142,8 @@ const ControllerPage = () => {
         title="Hand Gesture Controller"
         subtitle="Arduino NANO with MPU6050 Motion Sensing"
         description="The hand gesture controller captures your hand movements using advanced motion sensors and wirelessly transmits commands to the robotic car for intuitive control."
-        primaryAction={{
-          label: "View Car System",
-          to: "/car"
-        }}
-        secondaryAction={{
-          label: "Back to Home", 
-          to: "/"
-        }}
-        backgroundImage={heroController}
-        compact={true}
+        imageSrc={heroController}
+        imageAlt="Hand Gesture Controller Hardware"
       />
 
       {/* Components Section */}

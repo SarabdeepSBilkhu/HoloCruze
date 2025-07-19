@@ -13,10 +13,10 @@ const Navigation = () => {
 
   return (
     <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-primary">
-            <Cpu className="h-6 w-6" />
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-20">
+          <Link to="/" className="flex items-center space-x-3 text-xl font-display font-semibold text-foreground hover:text-primary transition-colors">
+            <Cpu className="h-7 w-7 text-primary" />
             <span>Gesture Robotics</span>
           </Link>
           

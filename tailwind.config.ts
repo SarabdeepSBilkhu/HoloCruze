@@ -66,12 +66,17 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-tech': 'var(--gradient-tech)',
+				'gradient-subtle': 'var(--gradient-subtle)',
 				'gradient-hero': 'var(--gradient-hero)'
 			},
 			boxShadow: {
-				'tech': 'var(--shadow-tech)',
+				'minimal': 'var(--shadow-minimal)',
+				'product': 'var(--shadow-product)',
 				'glow': 'var(--shadow-glow)'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif']
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
