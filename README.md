@@ -58,10 +58,6 @@ gesturedrive/
 4. Upload the respective sketches to each board.
 5. Power up and test the system.
 
-## 📽️ Demo
-
-*Insert video or gif link showcasing live demonstration here*
-
 ## 📄 License
 
 This project is licensed under the MIT License.
