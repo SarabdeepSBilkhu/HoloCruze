@@ -1,6 +1,6 @@
-# GestureDrive 🚗✋
+# HoloCruze 🚗✋
 
-GestureDrive is a hand gesture-controlled robotic car that uses RF communication for seamless wireless control. The system includes a gesture-sensing controller built with an Arduino Nano and a car unit powered by an Arduino Uno alternative, controlled via RF transmitter/receiver modules.
+HoloCruze is a hand gesture-controlled robotic car that uses RF communication for seamless wireless control. The system includes a gesture-sensing controller built with an Arduino Nano and a car unit powered by an Arduino Uno alternative, controlled via RF transmitter/receiver modules.
 
 ## 🔧 Features
 
@@ -29,7 +29,7 @@ GestureDrive is a hand gesture-controlled robotic car that uses RF communication
 ## 🖼️ Project Structure
 
 ```
-gesturedrive/
+holocruze/
 ├── hardware/
 │   ├── car_circuit_diagram.png
 │   └── controller_circuit_diagram.png
